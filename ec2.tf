@@ -7,7 +7,7 @@ resource "aws_instance" "myec2-instance"
 ami = "ami-080e1f13689e07408"
 instance_type = "t2.micro"
 key_name="hanvi"
-user_data= << EOF
+user_data= <<-EOF
               #! /bin/bash
               sudo apt update -y
               sudo apt install fontconfig openjdk-17-jre -y
